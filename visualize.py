@@ -150,5 +150,5 @@ ani = create_animation(
     update_func=update_line,
     frames=100,
     interval=20,
-    save_path='/mnt/data/generalized_animation.mp4'
+    save_path=None
 )
