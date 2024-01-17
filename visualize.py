@@ -128,27 +128,27 @@ def create_animation(setup_func, update_func, frames=100, interval=20, save_path
 
     return ani
 
-# Example of how to use this function
+# # Example of how to use this function
 
-# Define the setup function
-def setup_plot(ax):
-    ax.set_xlim(0, 2*np.pi)
-    ax.set_ylim(-1, 1)
-    line, = ax.plot([], [], lw=2)
-    return line,
+# # Define the setup function
+# def setup_plot(ax):
+#     ax.set_xlim(0, 2*np.pi)
+#     ax.set_ylim(-1, 1)
+#     line, = ax.plot([], [], lw=2)
+#     return line,
 
-# Define the update function
-def update_line(frame, line):
-    x = np.linspace(0, 2*np.pi, 200)
-    y = np.sin(x + frame / 10)
-    line.set_data(x, y)
-    return line,
+# # Define the update function
+# def update_line(frame, line):
+#     x = np.linspace(0, 2*np.pi, 200)
+#     y = np.sin(x + frame / 10)
+#     line.set_data(x, y)
+#     return line,
 
-# Create and save the animation
-ani = create_animation(
-    setup_func=setup_plot,
-    update_func=update_line,
-    frames=100,
-    interval=20,
-    save_path=None
-)
+# # Create and save the animation
+# ani = create_animation(
+#     setup_func=setup_plot,
+#     update_func=update_line,
+#     frames=100,
+#     interval=20,
+#     save_path=None
+# )
